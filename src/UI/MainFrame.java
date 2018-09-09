@@ -31,7 +31,6 @@ public class MainFrame extends JFrame {
         pMenu = new JMenu("Persons");
         lMenu = new JMenu("Lessons");
         aMenu = new JMenu("Assigments");
-        prntMenu = new JMenu("Print");
         hMenu = new JMenu("Help");
 
         // User-related options
@@ -69,7 +68,6 @@ public class MainFrame extends JFrame {
         menuBar.add(pMenu);
         menuBar.add(lMenu);
         menuBar.add(aMenu);
-        menuBar.add(prntMenu);
         menuBar.add(hMenu);
 
         setJMenuBar(menuBar);
@@ -208,30 +206,7 @@ public class MainFrame extends JFrame {
                     openedDialog.dispose();
                 }
             }
-        });
-
-        prntMenu.addMouseListener(new MouseListener() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                //edo edo edo
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-            }
-        });
+        });        
 
         hMenu.addMouseListener(new MouseListener() {
             @Override
@@ -274,7 +249,7 @@ public class MainFrame extends JFrame {
     }
     
     private JMenuBar menuBar;
-    private JMenu pMenu, lMenu, aMenu, prntMenu, hMenu;
+    private JMenu pMenu, lMenu, aMenu, hMenu;
     private JMenuItem usersMenuItem, teacherMenuItem, studentMenuItem, exitMenuItem, lessonMenuItem,
             prerequisitesMenuItem, teachingMenuItem, enrollMenuItem;
     private ImageIcon backgroundImage;
